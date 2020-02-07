@@ -14,8 +14,10 @@ Die App besteht aus zwei Fenstern:
 </p>
 
 ## Kommunikation
-Als Kommunikationschnittstelle zwischen App und Datenbank dient das MQTT-Protokoll. Die App fungiert dabei als Client, der Nachrichten über einen Broker an einen weitern Client im Backend sendet. Für Android Studio wurde der [HiveMq-Client](https://www.hivemq.com/blog/hivemq-mqtt-client-features/android-support/) implementiert.
+Als Kommunikationschnittstelle zwischen App und Datenbank dient das MQTT-Protokoll. MQTT ermöglicht leichtgewichtige M2M-Kommunikation über das Publish/Subscribe-Prinzip.
 
+### Android Studio
+Für Android Studio wurde der [HiveMq-Client](https://www.hivemq.com/blog/hivemq-mqtt-client-features/android-support/) implementiert.
 Die publish-Methode über das Topic `mensaiot`:
 ```java
 Mqtt5BlockingClient client = Mqtt5Client.builder()
@@ -32,8 +34,10 @@ client.publishWith().topic("mensaiot")
 client.disconnect();                
 ```
 
+### Python-Skript
 
-Die Nachricht wird an einen [Python-Client](https://pypi.org/project/paho-mqtt/) weitergeleitet, der das identische Topic *subscribed* hat:
+Die Nachricht wird an einen [Python-Client](https://pypi.org/project/paho-mqtt/) weitergeleitet, der die empfangenen Daten verarbeiten kann.
+Die Implementierung des Clients ist wie folgt:
 ```python
 def on_subscribe(client, userdata, mid, granted_qos):
     print("Subscribed: " + str(mid) + "" + str(granted_qos))
