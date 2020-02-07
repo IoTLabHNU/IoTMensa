@@ -16,7 +16,7 @@ Die App besteht aus zwei Fenstern:
 ## Kommunikation
 Als Kommunikationschnittstelle zwischen App und Datenbank dient das MQTT-Protokoll. Die App fungiert dabei als Client, der Nachrichten über einen Broker an einen weitern Client im Backend sendet. Für Android Studio wurde der [HiveMq-Client](https://www.hivemq.com/blog/hivemq-mqtt-client-features/android-support/) implementiert.
 
-Die publish-Methode mit dem Topic `mensaiot`:
+Die publish-Methode über das Topic `mensaiot`:
 ```java
 Mqtt5BlockingClient client = Mqtt5Client.builder()
                 .identifier(UUID.randomUUID().toString())
