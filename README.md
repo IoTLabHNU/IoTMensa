@@ -32,6 +32,7 @@ client.publishWith().topic("mensaiot")
 client.disconnect();                
 ```
 
+
 Die Nachricht wird an einen [Python-Client](https://pypi.org/project/paho-mqtt/) weitergeleitet, der das identische Topic *subscribed* hat:
 ```python
 def on_subscribe(client, userdata, mid, granted_qos):
