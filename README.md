@@ -1,5 +1,5 @@
 # About
-Dieser Prototyp wurde für das Seminar "Performance Management" entwickelt im Studiengang "Information Management Automotive".
+Dieser Prototyp wurde für das Seminar "Performance Management" im Studiengang "Information Management Automotive" an der Hochschule Neu-Ulm entwickelt.
 Ziel war es, mehrere Datenquellen innerhalb der Hochschul-Mensa zu bestimmen, über eine Android Applikation zu erfassen und in einer Datenbank zu speichern.
 Die abgespeicherten Daten können mit dem Visualizerungstool [Grafana](https://grafana.com/) in anpassbaren Dashboards visuell dargestellt werden.
 
