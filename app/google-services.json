@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "856988907900",
+    "firebase_url": "https://performace-project.firebaseio.com",
+    "project_id": "performace-project",
+    "storage_bucket": "performace-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856988907900:android:0581ec52571e2e75798cf9",
+        "android_client_info": {
+          "package_name": "com.imapro.firecloud"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856988907900-8ud74ehjcc38bco2ssaketllanagg695.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.imapro.firecloud",
+            "certificate_hash": "933f479ebda1c10e157513e8f6edc382aa9cbb7b"
+          }
+        },
+        {
+          "client_id": "856988907900-u5cindh5n9kj1jinpsci2g0girvrd2sl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATeyB9_IGQhT65_-kfnWngcIM8al39How"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "856988907900-u5cindh5n9kj1jinpsci2g0girvrd2sl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
