@@ -8,7 +8,12 @@ Die App besteht aus zwei Fenstern:
 - **Startbildschirm** dient als Eingangs- und Ausgangsposition. Durch einen Knopfdruck kann die Umfrage gestartet werden.
 - **Nutzereingabe** dient als Datenerfassung. Dem Nutzer werden zwei Fragen gestellt, die über einen *Numberpicker* und *RadioButtons* ausgewertet werden können. Nach der Bestätigung geht die App wieder automatisch auf den Startbildschirm zurück.
 
-![alt-text-1](https://github.com/IoTLabHNU/IoTMensa/blob/master/images/gui_startscreen.PNG "Startbildschirm")    ![alt-text-2](https://github.com/IoTLabHNU/IoTMensa/blob/master/images/survey_new.PNG "Nutzereingabe")
+![alt-text-1](https://github.com/IoTLabHNU/IoTMensa/blob/master/images/gui_startscreen.PNG "Startbildschirm") ![alt-text-2](https://github.com/IoTLabHNU/IoTMensa/blob/master/images/survey_new.PNG "Nutzereingabe")
+
+<p align="center">
+  <img src="https://github.com/IoTLabHNU/IoTMensa/blob/master/images/gui_startscreen.PNG" width="200" alt="Startbildschirm">
+  <img src="https://github.com/IoTLabHNU/IoTMensa/blob/master/images/survey_new.PNG" width="200" alt="Nutzereingabe">
+</p>
 
 
 
