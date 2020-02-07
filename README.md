@@ -13,5 +13,17 @@ Die App besteht aus zwei Fenstern:
   <img src="https://github.com/IoTLabHNU/IoTMensa/blob/master/images/survey_new.PNG" width="300" alt="Nutzereingabe">
 </p>
 
+## Kommunikation
+Als Kommunikationschnittstelle zwischen App und Datenbank dient das MQTT-Protokoll. Die App fungiert dabei als Client, der Nachrichten über einen Broker an einen weitern Client im Backend sendet. Für Android Studio wurde der (HiveMq-Client)[https://www.hivemq.com/blog/hivemq-mqtt-client-features/android-support/] implementiert.
+
+Die publish-Methode:
+```java
+Mqtt5BlockingClient client = Mqtt5Client.builder()
+                .identifier(UUID.randomUUID().toString())
+                .serverHost("broker.mqttdashboard.com")
+                .buildBlocking();
+```
+
+
 
 
