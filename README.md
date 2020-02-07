@@ -7,6 +7,7 @@ Die abgespeicherten Daten können mit dem Visualizerungstool [Grafana](https://g
 Die App besteht aus zwei Fenstern:
 - **Startbildschirm** dient als Eingangs- und Ausgangsposition. Durch einen Knopfdruck kann die Umfrage gestartet werden.
 - **Nutzereingabe** dient als Datenerfassung. Dem Nutzer werden zwei Fragen gestellt, die über einen *Numberpicker* und *RadioButtons* ausgewertet werden können. Nach der Bestätigung geht die App wieder automatisch auf den Startbildschirm zurück.
+![alt-text-1]( "Startbildschirm") ![alt-text-2](image2.png "Nutzereingabe")
 
 
 
