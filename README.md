@@ -49,7 +49,7 @@ client = paho.Client()
 client.on_subscribe = on_subscribe
 client.on_message = on_message
 client.connect("broker.mqttdashboard.com", 1883)
-client.subscribe("mqtt_topic", qos=1)
+client.subscribe("mensaiot", qos=1)
 
 client.loop_forever()
 ```
