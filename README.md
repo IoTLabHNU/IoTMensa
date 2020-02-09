@@ -3,7 +3,7 @@
 </h1>
 
 # About
-This is a first approach to an Android Studio project with Google Firebase. It is convenient to send data from an application to a NoSQL-database, without a database-connector or middleware-component.
+This is a first approach to an Android Studio project with [Google Firebase](https://firebase.google.com/). It is convenient to send data from an application to a NoSQL-database, without a database-connector or middleware-component.
 
 ## Firecloud
 The Firecloud database is currently not available, due to missing security permissions.
