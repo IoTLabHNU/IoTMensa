@@ -83,7 +83,9 @@ class DatabaseManager:
  ## Entwurfsunterlage Prototyp
  
  <p align="center">
-  <img src="" width="500" alt="Entwurfsunterlage"
+  <img src="https://github.com/IoTLabHNU/IoTMensa/blob/master/images/unterlage.PNG" width="500" alt="Entwurfsunterlage">
+ </p>
+       
 
 
 
