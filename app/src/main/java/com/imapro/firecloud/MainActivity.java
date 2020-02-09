@@ -39,7 +39,10 @@ public class MainActivity extends AppCompatActivity {
     private EditText editTextPriority;
     private TextView textViewData;
 
+    //creates new database instance
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
+
+    //target collection for new notes
     private CollectionReference notebookRef = db.collection("Notebook");
 
     private DocumentSnapshot lastResult;
@@ -58,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+    //Adds new notes with the input data
     public void addNote(View v) {
         String title = editTextTitle.getText().toString();
         String description = editTextDescription.getText().toString();
@@ -69,8 +72,10 @@ public class MainActivity extends AppCompatActivity {
 
         int priority = Integer.parseInt(editTextPriority.getText().toString());
 
+        //New note object
         Note note = new Note(title, description, priority);
 
+        //Executes add-method and checks if transaction is successful
         notebookRef.add(note)
                 .addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
                     @Override
@@ -80,9 +85,10 @@ public class MainActivity extends AppCompatActivity {
                 });
     }
 
-
+    //Returns all notes from the collection
     public void loadNotes(View v) {
         Query query;
+        //Only loads the first three documents in priority-order
         if (lastResult == null) {
             query = notebookRef.orderBy("priority")
                     .limit(3);
