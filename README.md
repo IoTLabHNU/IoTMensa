@@ -56,7 +56,7 @@ client.loop_forever()
 
 ## Datenpersistenz
 
-Eingehende Nachrichten werden in einer MySQL-Datenbanktabelle abgespeichert. Dazu wird ein Python-Connector mit der Klasse *DatenbankManager* implementiert:
+Eingehende Nachrichten werden in einer MySQL-Datenbanktabelle abgespeichert. Dazu wird ein Python-Connector in der Klasse `DatenbankManager` implementiert:
 
 ```python
 class DatabaseManager:
@@ -80,6 +80,10 @@ class DatabaseManager:
         self.cnx.close()
  ```
  
+ ## Entwurfsunterlage Prototyp
+ 
+ <p align="center">
+  <img src="" width="500" alt="Entwurfsunterlage"
 
 
 
