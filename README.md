@@ -54,6 +54,32 @@ client.subscribe("mensaiot", qos=1)
 client.loop_forever()
 ```
 
+## Datenpersistenz
+
+Eingehende Nachrichten werden in einer MySQL-Datenbanktabelle abgespeichert. Dazu wird ein Python-Connector mit der Klasse *DatenbankManager* implementiert:
+
+```python
+class DatabaseManager:
+    def __init__(self):
+        # Connect to MySQL-database
+        self.cnx = mysql.connector.connect(user='IMA',
+                                           password='ima',
+                                           host='192.168.141.46',
+                                           port='3306',
+                                           database='MensaDB')
+        self.cnx.commit()
+        self.cursor = self.cnx.cursor()
+
+    def on_update_db(self, query, value=()):
+        self.cursor.execute(query, value)
+        self.cnx.commit()
+        return
+
+    def __del__(self):
+        self.cursor.close()
+        self.cnx.close()
+ ```
+ 
 
 
 
