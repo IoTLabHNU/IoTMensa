@@ -61,7 +61,6 @@ Eingehende Nachrichten werden in einer MySQL-Datenbanktabelle abgespeichert. Daz
 ```python
 class DatabaseManager:
     def __init__(self):
-        # Connect to MySQL-database
         self.cnx = mysql.connector.connect(user='IMA',
                                            password='ima',
                                            host='192.168.141.46',
